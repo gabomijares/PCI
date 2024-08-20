@@ -9,7 +9,7 @@ PROPÓSITO
 
 Este programa es especialmente útil para el área de ventas de una agencia BMW. El proceso de elección de un automóvil suele ser exhaustivo, ya que para sentirse con la satisfacción de haber tomado la decisión correcta, hay que obtener seguridad de haber contemplado todas las opciones disponibles y todas las características que se desean. Al utilizar este programa, digamos, en línea antes de acudir a la agencia, el cliente puede ir a buscar su automóvil con una aproximación mucho más cercana de la mejor opción para él. Esto le provoca un acercamiento anticipado a la marca, un sentido de orientación en cuanto a la toma de decisión, y ahorra tiempo en el proceso de elección y compra del vehículo.
 
-PROCEDIMIENTO Y ALGORITMO \n
+PROCEDIMIENTO Y ALGORITMO
 
 1. El cliente accede a la página de BMW y encuentra el test.
 2. El cliente comienza el test, y empieza ingresar los datos de acuerdo a su preferencia en el vehículo.
