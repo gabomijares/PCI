@@ -1,0 +1,192 @@
+# Modelos disponibles en el test BMW
+
+def bmw1():
+    print('BMW Serie 1 128ti')
+    print('El compacto deportivo perfecto para quienes buscan un auto ágil y divertido de manejar. Con un diseño dinámico y un rendimiento mejorado, ofrece una experiencia de conducción emocionante.')
+    print(' - Tracción delantera precisa.\n - Suspensión deportiva M con ajuste revisado.\n - Diferencial autoblocante mecánico mejorado.')
+    print('270 hP\nPrecio Base: $610,500 mx\nPrecio Equipado: $698,000 mxn')
+
+def bmw2():
+    print('BMW Serie 2 Coupé')
+    print('El BMW Serie 2 Coupé ofrece un diseño compacto y elegante con un rendimiento deportivo mejorado. Es perfecto para aquellos que desean un manejo ágil y dinámico en un paquete sofisticado.')
+    print(' - Suspensión M adaptativa mejorada.\n - Control de tracción xDrive disponible.\n - Nuevos sistemas de asistencia al conductor.')
+    print('380 hP\nPrecio Base: $670,000 MXN\nPrecio Equipado: $890,000 MXN')
+
+def bmw3():
+    print('BMW Serie 3')
+    print('El Serie 3 de BMW sigue siendo un referente en su categoría, combinando elegancia, tecnología avanzada y un rendimiento que se adapta tanto a la ciudad como a la carretera.')
+    print(' - Sistema de infoentretenimiento iDrive 9.\n - Opción de motores híbridos enchufables.\n - Nueva generación de suspensión adaptativa.')
+    print('190-510 hP\nPrecio Base: $750,000 MXN\nPrecio Equipado: $1,390,000 MXN')
+
+def bmw4GC():
+    print('BMW Serie 4 Gran Coupé')
+    print('Con un diseño aerodinámico y mejoras en su rendimiento, el BMW Serie 4 Gran Coupé es una opción versátil para quienes buscan lujo y deportividad con mayor espacio interior.')
+    print(' - Nueva tecnología híbrida suave.\n - Puertas sin marco con mejor acústica.\n - Sistema de sonido premium Harman Kardon.')
+    print('390 hP\nPrecio Base: $870,000 MXN\nPrecio Equipado: $1,170,000 MXN')
+
+def bmwi4():
+    print('BMW i4 eDrive40')
+    print('El i4 eDrive40 continúa siendo una referencia en el segmento de autos eléctricos, ofreciendo una autonomía notable y un manejo deportivo que mantiene el ADN de BMW.')
+    print(' - Autonomía extendida hasta 580 km.\n - Carga rápida mejorada.\n - Tecnología de asistencia de conducción avanzada.')
+    print('350 hP\nPrecio Base: $980,000 MXN\nPrecio Equipado: $1,150,000 MXN')
+
+def bmwz4():
+    print('BMW Z4 M40i Roadster')
+    print('El BMW Z4 M40i se renueva para ofrecer una experiencia de conducción al aire libre aún más emocionante, con un rendimiento superior y tecnología actualizada.')
+    print(' - Capota suave retráctil mejorada para más aislamiento acústico.\n - Sistema de escape deportivo M ajustado.\n - Configuración de chasis adaptada para mejor manejo.')
+    print('390 hP\nPrecio Base: $1,150,000 MXN\nPrecio Equipado: $1,320,000 MXN')
+
+def bmwx3M():
+    print('BMW X3 M')
+    print('El BMW X3 M se posiciona como un SUV deportivo con un rendimiento extraordinario, perfecto para quienes buscan potencia y versatilidad sin sacrificar el lujo.')
+    print(' - Suspensión M adaptativa mejorada.\n - Tracción integral M xDrive optimizada.\n - Asientos deportivos en cuero premium.')
+    print('480 hP\nPrecio Base: $1,320,000 MXN\nPrecio Equipado: $1,500,000 MXN')
+
+def bmwx4MC():
+    print('BMW X4 M Competition')
+    print('El BMW X4 M Competition se destaca por su combinación única de diseño coupé y capacidades de SUV, brindando una experiencia de conducción emocionante en cualquier terreno.')
+    print(' - Diseño exterior renovado con líneas más aerodinámicas.\n - Frenos M de alto rendimiento.\n - Sistema de asistencia de estacionamiento automático.')
+    print('520 hP\nPrecio Base: $1,450,000 MXN\nPrecio Equipado: $1,650,000 MXN')
+
+def bmwx6MC():
+    print('BMW X6 M Competition')
+    print('El BMW X6 M Competition 2025 es una máquina impresionante, combinando un diseño agresivo y una potencia abrumadora para quienes buscan el máximo rendimiento en un SUV.')
+    print(' - Sistema de escape deportivo M renovado.\n - Tecnología de conducción semi-autónoma.\n - Tapicería en cuero Merino exclusivo.')
+    print('630 hP\nPrecio Base: $2,200,000 MXN\nPrecio Equipado: $2,420,000 MXN')
+
+def bmwiX():
+    print('BMW iX M60')
+    print('El BMW iX M60 2025 es un SUV eléctrico de alta gama que combina tecnología de punta, lujo y sostenibilidad, ofreciendo una experiencia única tanto en carretera como en la ciudad.')
+    print(' - Autonomía de hasta 590 km.\n - Tecnología de control por gestos mejorada.\n - Sistema de conducción autónoma nivel 3.')
+    print('620 hP\nPrecio Base: $1,980,000 MXN\nPrecio Equipado: $2,150,000 MXN')
+
+'''
+Todavía me falta el código que evalúa las opciones del usuario
+y regresa el modelo elegido. Sin emargo, quiero ver conforme avancemos
+si es posible almanecar los datos en listas, y de esta manera hacer
+una especie de puntaje para enlazar con el resultado.
+'''
+
+# Esta función corresponde al programa que realiza el financiamiento
+
+def financing(price, perc, months):
+    eng = price * (perc / 100)  
+    debt = price - eng  
+    yearInt = 0.15  
+    intTotal = 0  
+    years = months // 12
+    if months > 12:
+        for _ in range(years):
+            intTotal += debt * yearInt
+    monpay = (debt+intTotal)/months
+    return round(monpay, 2)
+
+    print('- Enganche (',perc,'%): ', eng)
+    print('- Monto a financiar: ', debt)
+    print('- Tasa de Interés Anual: ', yearInt)
+    print('- Mensualidades: ', monpay)
+
+# Función para casos de prueba
+
+def testFinancing():
+    price = 1000000
+    perc = 60
+    months = 12
+    expectedRes = 33333.33
+    result = financing(price, perc, months)
+    assert result == expectedRes, f"Caso 1: False, obtenido {result}"
+
+    price = 1500000
+    perc = 40
+    months = 24
+    expectedRes = 48750.00
+    result = financing(price, perc, months)
+    assert result == expectedRes, f"Caso 2: False, obtenido {result}"
+    
+    print("Casos de prueba: True")
+
+# Menus de las opciones en el test
+
+def menuUse():
+    print('1. Uso diario, prefiero la comodidad.')
+    print('2. Carreteras, soy un nómada moderno.')
+    print('3. Pista, todo un amante de la velocidad')
+    print('4. Off-Road, me encanta la adrenalina.')
+
+def menuSize():
+    print('1. Un auto pequeño, para uso individual.')
+    print('2. Un auto mediano, para la comodidad de dos o tres personas.')
+    print('3. Un auto grande, perfecto para la familia.')
+
+def menuFuel():
+    print('1. Preferiría no consumir combustible en lo absoluto.')
+    print('2. Un consumo promedio sería ideal.')
+    print('3. El combustible no es problema en lo absoluto.')
+
+def menuPower():
+    print('1. La potencia no es algo que este en mis prioridades.')
+    print('2. Mi auto tiene que ser suficentemente potente. Por seguridad.')
+    print('3. Quiero todos los caballos en mi cofre!')
+    
+def menuBudget():
+    print('1. > $600,000')
+    print('2. > $800,000')
+    print('3. > $1,000,000')
+    print('4. > $1,500,000')
+    print('5. > $2,000,000')
+
+
+def main():
+    print('Hola! Bienvenido a tu test "Mi BMW Y YO". \nAquí podrás definir qué buscan en tu BMW, y te ayudaremos a encontrar el vehículo para ti. \n ¿Estás listo/a?')
+    resp = input()
+    print('\nExcelente! Empecemos por definir lo más importante. \n\n¿Cuál es el uso que le darás a tu BMW?')
+    menuUse()
+    op1 = int(input())
+    # Programa para guardar datos de uso
+    print('Ya tenemos lo más importante. Ahora, ¿de qué tamaño buscas tu BMW?')
+    menuSize()
+    op2 = int(input())
+    # Programa para guardar datos de tamaño
+    print('Muy bien! Ahora, ¿qué tanto planeas consumir combustible?')
+    menuFuel()
+    op3 = int(input())
+    # Programa para guardar datos de combustible
+    print('Buena decisión. Vayamos a lo divertido, ¿qué tan potente quieres que sea tu BMW?')
+    menuPower()
+    op4 = int(input())
+    # Programa para guardar datos de poder
+    print('Ya casi terminamos! Ahora, ¿cuál es tu presupuesto aproximado?')
+    menuBudget()
+    op5 = int(input())
+    print('Terminamos. ¿Listo para conocer tu BMW ideal?\n')
+    resp2 = input()
+    # Resultado del BMW para el usuario
+    print('\n*AQUÍ SE MOSTRARÁ EL MODELO SELECCIONADO*\n')
+    print('Ahora, hagamos posible que seas tú quién disfrute de este vehículo.\n ¿Deseas conocer un plan de financiamiento que se adapte a tu presupuesto?')
+    print('1. Hagámoslo!\n2. Prefiero el pago de contado.')
+    resp3 = int(input())
+    if resp3 == 1:
+        print('Volvámoslo realidad!\nEn el plan de financiamiento, el mínimo porcentaje de enganche es del 30%. ¿Con qué porcentaje quisieras iniciar?')
+        while True:
+            perceng = int(input())
+            if perceng >= 30:
+                print('Muy bien. ¿A cuántos meses te gustaría financiarlo?')
+                print(' (El máximo son 48 meses)')
+                while True:
+                    months = int(input())
+                    if months > 48:
+                        print('El máximo son 48 meses')
+                    elif months < 2:
+                        print('El mínimo son 2 meses')
+                    else:
+                        print('\nPerfecto! Este es el plan de financiamiento que mejor se adapta a tu presupuesto:')
+                        financing(100000,perceng,months)
+                        print('\nAsí que corre por tu (nombre) a tu agencia BMW más cercana. Hazlo tuyo!')
+                break
+            else:
+                print('Lo siento. El mínimo es 30.')
+    elif resp3 == 2:
+        print('Perfecto! Te esperamos en tu agencia BMW más cercana. Hazlo tuyo!')
+
+main()
+#testFinancing()
