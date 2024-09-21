@@ -16,7 +16,8 @@ PROCEDIMIENTO Y ALGORITMO
 3. Especifica el uso que le dará, el tamaño, su consumo de combustible, potencia y su presupuesto.
 4. Una vez terminado, se analizan los datos y se busca el vehículo que cuente con mayor parecido a las características establecidas.
 5. Se devuelve el vehículo ideal para el cliente, junto con las especificaciones y costos del mismo.
-6. Si el usuario lo desea, este podrá crear un plan de financiamiento.
-7. Introducirá el enganche que desea pagar y a cuántos meses desea financiarlo.
-8. Se devuelve un plan de financiamiento con costos, tasas, plazos y mensualidades.
-9. El cliente acude a la agencia BMW a comprar su vehículo con una idea más clara de lo que busca.
+6. También se devuelven archivos de foto y video del vehículo, así como un pdf de la ficha técnica.
+7. Si el usuario lo desea, este podrá crear un plan de financiamiento.
+8. Introducirá el enganche que desea pagar y a cuántos meses desea financiarlo.
+9. Se devuelve un plan de financiamiento con costos, tasas, plazos y mensualidades.
+10. El cliente acude a la agencia BMW a comprar su vehículo con una idea más clara de lo que busca.
