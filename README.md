@@ -46,7 +46,7 @@ PROGRAMA DE FINANCIAMIENTO:
 12. Pregunta VERSIÓN: Elige si deseas adquirir la versión básica o la equipada.
 13. Pregunta ENGANCHE: Elige el porcentaje del pago inicial o enganche con el que desea comenzar (Min: 30%).
 14. Pregunta MESES: Elige a cuantos meses deseas financiar tu BMW (Min: 2 meses, Máx: 48 meses).
-15. El programa arrojará un plan de financiamiento perfecto para ti, con:
+15. El programa arrojará un plan de financiamiento perfecto para ti, en consola como en un archivo .txt, con:
     - Porcentaje de enganche
     - Monto restante a financiar
     - La tasa de interés anual
